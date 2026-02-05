@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://samdani-x.github.io",
+    url: "https://samdani-x.github.io/samdani",
     siteName: "Md. Mahbub E Samdani",
     title: "Md. Mahbub E Samdani | Cybersecurity Researcher & Full-Stack Developer",
     description: "CSE Undergraduate specializing in Cybersecurity Research, Digital Forensics, and Full-Stack Development.",

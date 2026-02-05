@@ -69,7 +69,7 @@ export default function Hero() {
             <div className="flex justify-center md:justify-end">
               <div className="w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] relative">
                 <img
-                  src="/profile.jpg"
+                  src="/samdani/profile.jpg"
                   alt="Md. Mahbub E Samdani"
                   className="w-full h-full object-cover"
                   style={{
