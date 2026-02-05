@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
 import Reveal from './Reveal';
 
 export default function Hero() {
@@ -69,11 +68,10 @@ export default function Hero() {
           <Reveal delay={0.2}>
             <div className="flex justify-center md:justify-end">
               <div className="w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] relative">
-                <Image
-                  src="/profile.jpg"
+                <img
+                  src="/samdani.github.io/profile.jpg"
                   alt="Md. Mahbub E Samdani"
-                  fill
-                  className="object-cover"
+                  className="w-full h-full object-cover"
                   style={{
                     maskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)',
                     WebkitMaskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)'
