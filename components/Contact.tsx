@@ -33,10 +33,10 @@ export default function Contact() {
 
         <Reveal delay={0.4} width="100%">
           <a
-            href="mailto:contact@samdani.com"
+            href="mailto:23201101@uap-bd.edu"
             className="inline-block text-2xl md:text-3xl text-[var(--foreground)] border-b text-center border-[var(--border)] pb-2 hover:border-[var(--foreground)] transition-colors duration-300 font-light"
           >
-            contact@samdani.com
+            23201101@uap-bd.edu
           </a>
         </Reveal>
 

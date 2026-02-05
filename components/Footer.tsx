@@ -13,8 +13,8 @@ export default function Footer() {
                 </Reveal>
                 <Reveal delay={0.1}>
                     <div className="flex gap-8">
-                        <a href="mailto:contact@samdani.com" className="hover:text-[var(--foreground)] transition-colors">
-                            contact@samdani.com
+                        <a href="mailto:23201101@uap-bd.edu" className="hover:text-[var(--foreground)] transition-colors">
+                            23201101@uap-bd.edu
                         </a>
                     </div>
                 </Reveal>
