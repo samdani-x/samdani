@@ -1,4 +1,4 @@
-# Samdani's Portfolio
+# Md. Mahbub E Samdani's Portfolio
 
 A modern, responsive portfolio website built with Next.js 15, TypeScript, and Tailwind CSS.
 
@@ -58,4 +58,4 @@ vercel
 
 ---
 
-Built with ❤️ by Samdani
+Built with ❤️ by Md. Mahbub E Samdani

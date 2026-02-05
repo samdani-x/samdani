@@ -10,26 +10,27 @@ export default function About() {
           {/* Left Column - Title & Description */}
           <div className="space-y-8">
             <Reveal width="100%">
-              <h2 className="text-5xl md:text-6xl font-light tracking-tight text-[var(--foreground)]">
+              <h2 className="text-5xl md:text-6xl font-light tracking-tight text-[var(--foreground)] hover:tracking-wide transition-all duration-500">
                 About Me
               </h2>
             </Reveal>
 
             <Reveal delay={0.2} width="100%">
               <div className="space-y-6 text-lg text-[var(--muted)] leading-relaxed font-light">
-                <p>
-                  I'm a Computer Science and Engineering undergraduate passionate about building 
-                  digital experiences that make a difference. My journey in tech is driven by 
-                  curiosity and a love for solving complex problems.
+                <p className="hover:text-[var(--foreground)] transition-colors duration-300">
+                  I'm a Computer Science and Engineering undergraduate with a deep passion for 
+                  cybersecurity and digital forensics. My journey in tech is driven by curiosity 
+                  about how systems work—and how to protect them from threats.
                 </p>
-                <p>
-                  I specialize in full-stack development, working with modern frameworks and 
-                  technologies to create scalable, performant applications. Every project is 
-                  an opportunity to learn something new and push the boundaries of what's possible.
+                <p className="hover:text-[var(--foreground)] transition-colors duration-300">
+                  I specialize in full-stack development while actively researching cybersecurity 
+                  vulnerabilities and conducting digital forensics investigations. Every project 
+                  is an opportunity to build secure, scalable applications.
                 </p>
-                <p>
-                  When I'm not coding, you'll find me exploring new technologies, contributing 
-                  to open source, or sharing knowledge with the developer community.
+                <p className="hover:text-[var(--foreground)] transition-colors duration-300">
+                  Beyond the digital world, I'm a landscape photographer who finds peace in 
+                  capturing nature's beauty. This creative outlet balances my technical pursuits 
+                  and inspires fresh perspectives in problem-solving.
                 </p>
               </div>
             </Reveal>
@@ -43,24 +44,38 @@ export default function About() {
                   What I Do
                 </h3>
                 <div className="space-y-4">
-                  <div className="border-l-2 border-[var(--border)] pl-4 py-2 hover:border-[var(--foreground)] transition-colors">
-                    <h4 className="text-lg font-light text-[var(--foreground)] mb-1">Full-Stack Development</h4>
-                    <p className="text-sm text-[var(--muted)] font-light">
-                      Building end-to-end solutions with React, Next.js, Node.js, and modern databases
-                    </p>
-                  </div>
-                  <div className="border-l-2 border-[var(--border)] pl-4 py-2 hover:border-[var(--foreground)] transition-colors">
-                    <h4 className="text-lg font-light text-[var(--foreground)] mb-1">UI/UX Design</h4>
-                    <p className="text-sm text-[var(--muted)] font-light">
-                      Crafting intuitive interfaces with attention to detail and user experience
-                    </p>
-                  </div>
-                  <div className="border-l-2 border-[var(--border)] pl-4 py-2 hover:border-[var(--foreground)] transition-colors">
-                    <h4 className="text-lg font-light text-[var(--foreground)] mb-1">System Architecture</h4>
-                    <p className="text-sm text-[var(--muted)] font-light">
-                      Designing scalable, maintainable systems that grow with your needs
-                    </p>
-                  </div>
+                  <Reveal delay={0.1}>
+                    <div className="border-l-2 border-[var(--border)] pl-4 py-2 hover:border-[var(--foreground)] hover:pl-6 hover:bg-[var(--card)] transition-all duration-300 group">
+                      <h4 className="text-lg font-light text-[var(--foreground)] mb-1 group-hover:translate-x-1 transition-transform duration-300">Full-Stack Development</h4>
+                      <p className="text-sm text-[var(--muted)] font-light group-hover:text-[var(--foreground)] transition-colors duration-300">
+                        Building secure, scalable applications with React, Next.js, Node.js, and modern databases
+                      </p>
+                    </div>
+                  </Reveal>
+                  <Reveal delay={0.2}>
+                    <div className="border-l-2 border-[var(--border)] pl-4 py-2 hover:border-[var(--foreground)] hover:pl-6 hover:bg-[var(--card)] transition-all duration-300 group">
+                      <h4 className="text-lg font-light text-[var(--foreground)] mb-1 group-hover:translate-x-1 transition-transform duration-300">Cybersecurity Research</h4>
+                      <p className="text-sm text-[var(--muted)] font-light group-hover:text-[var(--foreground)] transition-colors duration-300">
+                        Identifying vulnerabilities, penetration testing, and implementing security best practices
+                      </p>
+                    </div>
+                  </Reveal>
+                  <Reveal delay={0.3}>
+                    <div className="border-l-2 border-[var(--border)] pl-4 py-2 hover:border-[var(--foreground)] hover:pl-6 hover:bg-[var(--card)] transition-all duration-300 group">
+                      <h4 className="text-lg font-light text-[var(--foreground)] mb-1 group-hover:translate-x-1 transition-transform duration-300">Digital Forensics</h4>
+                      <p className="text-sm text-[var(--muted)] font-light group-hover:text-[var(--foreground)] transition-colors duration-300">
+                        Investigating digital evidence, incident response, and forensic analysis
+                      </p>
+                    </div>
+                  </Reveal>
+                  <Reveal delay={0.4}>
+                    <div className="border-l-2 border-[var(--border)] pl-4 py-2 hover:border-[var(--foreground)] hover:pl-6 hover:bg-[var(--card)] transition-all duration-300 group">
+                      <h4 className="text-lg font-light text-[var(--foreground)] mb-1 group-hover:translate-x-1 transition-transform duration-300">Landscape Photography</h4>
+                      <p className="text-sm text-[var(--muted)] font-light group-hover:text-[var(--foreground)] transition-colors duration-300">
+                        Capturing nature's beauty through creative composition and post-processing
+                      </p>
+                    </div>
+                  </Reveal>
                 </div>
               </div>
             </Reveal>

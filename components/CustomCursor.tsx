@@ -14,8 +14,8 @@ export default function CustomCursor() {
 
     useEffect(() => {
         const moveCursor = (e: MouseEvent) => {
-            cursorX.set(e.clientX - 16);
-            cursorY.set(e.clientY - 16);
+            cursorX.set(e.clientX);
+            cursorY.set(e.clientY);
         };
 
         const handleHoverStart = () => setIsHovered(true);
@@ -59,13 +59,35 @@ export default function CustomCursor() {
 
     return (
         <motion.div
-            className="fixed top-0 left-0 w-8 h-8 border border-[var(--foreground)] rounded-full pointer-events-none z-[9999] mix-blend-difference"
+            className="fixed top-0 left-0 pointer-events-none z-[9999]"
             style={{
                 x: cursorXSpring,
                 y: cursorYSpring,
-                scale: isHovered ? 1.5 : 1,
-                backgroundColor: isHovered ? 'var(--foreground)' : 'transparent',
             }}
-        />
+        >
+            {/* Arrow cursor */}
+            <motion.svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                className="mix-blend-difference"
+                style={{
+                    scale: isHovered ? 1.3 : 1,
+                    rotate: isHovered ? 45 : 0,
+                }}
+                initial={{ scale: 1 }}
+                animate={{ scale: isHovered ? 1.3 : 1, rotate: isHovered ? 45 : 0 }}
+                transition={{ duration: 0.2 }}
+            >
+                <path
+                    d="M4 4L20 12L12 14L10 20L4 4Z"
+                    fill="var(--foreground)"
+                    stroke="var(--foreground)"
+                    strokeWidth="1"
+                    strokeLinejoin="round"
+                />
+            </motion.svg>
+        </motion.div>
     );
 }

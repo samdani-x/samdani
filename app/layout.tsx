@@ -10,7 +10,7 @@ import CustomCursor from "@/components/CustomCursor";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Samdani - Portfolio",
+  title: "Md. Mahbub E Samdani - Portfolio",
   description: "CSE Undergraduate | Full Stack Developer",
 };
 

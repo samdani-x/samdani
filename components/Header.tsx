@@ -78,7 +78,7 @@ export default function Header() {
             className="text-xl md:text-2xl font-medium tracking-tight text-[var(--foreground)] hover:opacity-60 transition-opacity z-50 relative"
             onClick={() => setIsMenuOpen(false)}
           >
-            SAMDANI
+            MD. MAHBUB E SAMDANI
           </Link>
 
           <div className="flex items-center gap-8 z-50 relative">
