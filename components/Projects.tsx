@@ -9,14 +9,14 @@ export default function Projects() {
       title: 'Price Tracker',
       description: 'A smart price tracking application to monitor product prices and get alerts.',
       tech: ['Next.js', 'PostgreSQL', 'Redis', 'TypeScript'],
-      link: '#',
+      link: 'https://pricev2.vercel.app/',
       image: '/samdani/price_tkr.png'
     },
     {
       title: 'Smart Parking Management',
       description: 'Intelligent parking management system for efficient space utilization.',
       tech: ['Vite.js', 'SQLite', 'JavaScript'],
-      link: '#',
+      link: 'https://smart-parking.minhajul0152.workers.dev/',
       image: '/samdani/parkign.png'
     },
   ];
@@ -27,7 +27,7 @@ export default function Projects() {
         <Reveal>
           <div className="mb-20">
             <h2 className="text-3xl md:text-4xl font-light tracking-tight text-[var(--foreground)] mb-6">
-              Selected Work
+              Projects Completed
             </h2>
             <div className="h-px w-full bg-[var(--border)]" />
           </div>
