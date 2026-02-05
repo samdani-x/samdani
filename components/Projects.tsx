@@ -6,25 +6,18 @@ import Reveal from './Reveal';
 export default function Projects() {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A modern shopping experience built with Next.js and Stripe integration.',
-      tech: ['Next.js', 'TypeScript', 'Stripe', 'Tailwind'],
+      title: 'Price Tracker',
+      description: 'A smart price tracking application to monitor product prices and get alerts.',
+      tech: ['Next.js', 'PostgreSQL', 'Redis', 'TypeScript'],
       link: '#',
-      image: '/project1.jpg'
+      image: '/samdani/price_tkr.png'
     },
     {
-      title: 'Task Management App',
-      description: 'Collaborative project management tool with real-time updates.',
-      tech: ['React', 'Firebase', 'Redux', 'Material UI'],
+      title: 'Smart Parking Management',
+      description: 'Intelligent parking management system for efficient space utilization.',
+      tech: ['Vite.js', 'SQLite', 'JavaScript'],
       link: '#',
-      image: '/project2.jpg'
-    },
-    {
-      title: 'AI Image Generator',
-      description: 'Generate unique artwork using OpenAI DALL-E API.',
-      tech: ['Python', 'FastAPI', 'React', 'OpenAI'],
-      link: '#',
-      image: '/project3.jpg'
+      image: '/samdani/parkign.png'
     },
   ];
 
@@ -67,10 +60,11 @@ export default function Projects() {
 
                 <div className="relative aspect-video bg-[var(--muted)]/10 overflow-hidden order-1 md:order-2">
                   <div className="absolute inset-0 bg-[var(--muted)]/20 transition-colors duration-500 group-hover:bg-transparent" />
-                  {/* Placeholder for project image */}
-                  <div className="absolute inset-0 flex items-center justify-center text-[var(--muted)] opacity-20 text-4xl font-thin">
-                    Image
-                  </div>
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </Reveal>
