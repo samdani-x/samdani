@@ -39,9 +39,7 @@ export default function Projects() {
               <div className="group grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                 <div className="space-y-6 order-2 md:order-1">
                   <h3 className="text-2xl md:text-3xl font-light text-[var(--foreground)] group-hover:opacity-60 transition-opacity duration-300">
-                    <Link href={project.link}>
-                      {project.title}
-                    </Link>
+                    {project.title}
                   </h3>
                   <p className="text-[var(--muted)] leading-relaxed font-light text-lg">
                     {project.description}
@@ -56,6 +54,13 @@ export default function Projects() {
                       </span>
                     ))}
                   </div>
+                  <Link 
+                    href={project.link} 
+                    target="_blank"
+                    className="inline-block text-sm font-medium tracking-wider text-[var(--foreground)] border-b-2 border-[var(--foreground)] pb-1 hover:opacity-60 transition-opacity duration-300 uppercase"
+                  >
+                    Live Demo →
+                  </Link>
                 </div>
 
                 <div className="relative aspect-video bg-[var(--muted)]/10 overflow-hidden order-1 md:order-2">
