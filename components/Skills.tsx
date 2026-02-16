@@ -6,10 +6,10 @@ import Reveal from './Reveal';
 export default function Skills() {
   const skills = [
     { category: 'Frontend', items: ['React', 'Tailwind CSS', 'HTML', 'CSS'], animation: 'slide-right' },
-    { category: 'Backend', items: ['Python', 'FastAPI', 'Django', 'Flask'], animation: 'slide-left' },
-    { category: 'Cybersecurity', items: ['Penetration Testing', 'Vulnerability Assessment', 'Network Security', 'OWASP'], animation: 'fade-up' },
+    { category: 'Backend', items: ['Python', 'Django', 'Flask', 'REST API'], animation: 'slide-left' },
+    { category: 'Cybersecurity', items: ['Penetration Testing', 'Vulnerability Assessment', 'Network Security', 'Malware Analysis'], animation: 'fade-up' },
     { category: 'Digital Forensics', items: ['Autopsy', 'Wireshark', 'Volatility', 'FTK Imager'], animation: 'fade-down' },
-    { category: 'Database', items: ['PostgreSQL', 'Redis', 'SQLite', 'Prisma'], animation: 'scale' },
+    { category: 'Database', items: ['PostgreSQL', 'Redis', 'SQLite', 'MySQL'], animation: 'scale' },
     { category: 'Tools', items: ['Git', 'Docker', 'Linux', 'Burp Suite'], animation: 'rotate' },
   ];
 
